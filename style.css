@@ -32,3 +32,51 @@ header h1 span {
     color: var(--color3);
     text-decoration: underline;
 }
+
+#projects {
+    display: flex;
+}
+
+.cards {
+    border: 1px solid var(--color4);
+    padding: 1rem;
+}
+
+.content-card {
+    display: inline;
+}
+
+.content-card h3 {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color4);
+}
+
+.level {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    background: #2B593F;
+    border-radius: 1rem;
+    color: var(--color5);
+}
+
+.technology{
+    display: inline;
+    background: #c26107a1;
+    text-align: center;
+    width: fit-content;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    color: var(--color5);
+    text-transform: uppercase;   
+}
+
+.back-css {
+    background: #5950a7;
+}
