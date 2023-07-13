@@ -23,9 +23,12 @@ body {
 
 header {
     text-align: center;
-    font-family: var(--font-vt);
     border-bottom: 2px solid var(--color3);
     font-size: 1.3rem;
+}
+
+header h1 {
+    font-family: var(--font-vt);
 }
 
 header h1 span {
@@ -39,18 +42,24 @@ header h1 span {
 
 .cards {
     border: 1px solid var(--color4);
-    padding: 1rem;
 }
 
 .content-card {
-    display: inline;
+    background: var(--color3);
+    padding: 0.5rem;
+}
+
+.content-card:hover{
+    background: var(--color4);
+    transition: 1s;
 }
 
 .content-card h3 {
     display: block;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--color4);
+    color: black;
+    margin-top: -5px;
 }
 
 .level {
@@ -62,10 +71,11 @@ header h1 span {
     background: #2B593F;
     border-radius: 1rem;
     color: var(--color5);
+    margin-bottom: 0.5rem;
 }
 
 .technology{
-    display: inline;
+    display: inline-block;
     background: #c26107a1;
     text-align: center;
     width: fit-content;
@@ -74,9 +84,31 @@ header h1 span {
     font-weight: 400;
     border-radius: 0.5rem;
     color: var(--color5);
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
 
 .back-css {
     background: #5950a7;
+}
+
+/* Utilitários */
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
