@@ -40,27 +40,30 @@ header h1 span {
     display: flex;
 }
 
-.cards {
-    border: 1px solid var(--color4);
+.cards:hover {
+    cursor: pointer;
+}
+
+.banner {
+    margin-bottom: -4px;
 }
 
 .content-card {
-    background: var(--color3);
+    background: var(--color4);
     padding: 0.5rem;
 }
 
 .content-card:hover{
-    background: var(--color4);
+    background: var(--color5);
     transition: 1s;
-    cursor: pointer;
 }
 
 .content-card h3 {
     display: block;
+    font-family: var(--font-vt);
     font-size: 1rem;
     font-weight: 400;
     color: black;
-    margin-top: -5px;
 }
 
 .level {
