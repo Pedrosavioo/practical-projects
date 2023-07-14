@@ -36,8 +36,16 @@ header h1 span {
     text-decoration: underline;
 }
 
-#projects {
-    display: flex;
+section { 
+    width: fit-content;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 .cards:hover {
@@ -49,8 +57,10 @@ header h1 span {
 }
 
 .content-card {
+    width: 275px;
     background: var(--color4);
     padding: 0.5rem;
+
 }
 
 .content-card:hover{
@@ -60,7 +70,7 @@ header h1 span {
 
 .content-card h3 {
     display: block;
-    font-family: var(--font-vt);
+    font-family: monospace;
     font-size: 1rem;
     font-weight: 400;
     color: black;
@@ -94,6 +104,19 @@ header h1 span {
 
 .back-css {
     background: #5950a7;
+}
+
+footer {
+    border-top: 2px solid var(--color3);
+}
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
+
+footer p span {
+    color: var(--color3);
 }
 
 /* Utilitários */
